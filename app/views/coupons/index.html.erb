@@ -1,0 +1,9 @@
+
+<%= @coupons.each do |coupon| %>
+    <%= link_to coupon.to_s, coupon_path(coupon) %>
+<% end %>
+
+<!--
+<% coupons_array = Coupon.all.map { |coupon| [coupon.coupon_code, coupon.store] } %>
+<%= options_for_select(coupons_array) %>
+-->
